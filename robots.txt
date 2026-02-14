@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://umer-tahir1.github.io/Valentine_uswa/sitemap.xml
