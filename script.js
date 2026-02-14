@@ -4,7 +4,7 @@
 
 // ============ CUSTOMIZATION ============
 // Change these to personalize! 💖
-const girlfriendName = "❤️";
+const girlfriendName = "Uswa";
 const yourName = "Forever Yours";
 // =======================================
 
