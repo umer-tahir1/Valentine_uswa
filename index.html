@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💘 For You, My Love</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💘</text></svg>">
+</head>
+<body>
+    <!-- Heart Cursor -->
+    <div id="cursor-heart" class="cursor-heart">❤️</div>
+
+    <!-- Floating Hearts Background -->
+    <div id="hearts-bg" class="hearts-bg"></div>
+
+    <!-- Glowing Orbs -->
+    <div class="glow-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- ===== LANDING SECTION ===== -->
+    <section id="landing" class="section landing">
+        <div class="landing-content">
+            <div class="heart-beat">💖</div>
+            <h1 class="landing-title">Hey My Love <span class="heart-icon">❤️</span></h1>
+            <p class="landing-subtitle">I made something special just for you…</p>
+            <div class="envelope" id="envelope" onclick="openEnvelope()">
+                <div class="envelope-top"></div>
+                <div class="envelope-body">
+                    <div class="envelope-letter">💌</div>
+                </div>
+                <p class="tap-hint">tap to open</p>
+            </div>
+        </div>
+        <div class="scroll-hint" id="scroll-hint">
+            <span>↓</span>
+        </div>
+    </section>
+
+    <!-- ===== PROPOSAL SECTION ===== -->
+    <section id="proposal" class="section proposal">
+        <div class="proposal-content">
+            <div class="proposal-hearts">
+                <span class="p-heart p-heart-1">💕</span>
+                <span class="p-heart p-heart-2">💗</span>
+                <span class="p-heart p-heart-3">💖</span>
+                <span class="p-heart p-heart-4">💝</span>
+            </div>
+            <h2 class="proposal-title" id="proposal-title">Will you be my Valentine? 💌</h2>
+            <p class="proposal-subtitle" id="proposal-subtitle">You mean the world to me ❤️</p>
+            
+            <!-- Emotional message that changes on No clicks -->
+            <p class="emotional-msg" id="emotional-msg"></p>
+
+            <div class="buttons-container" id="buttons-container">
+                <button class="btn btn-yes" id="btn-yes" onclick="sayYes()">
+                    YES 💖
+                </button>
+                <button class="btn btn-no" id="btn-no" onclick="sayNo()">
+                    No 😢
+                </button>
+            </div>
+
+            <!-- Romantic Quotes Carousel -->
+            <div class="quotes-carousel" id="quotes-carousel">
+                <p class="quote" id="romantic-quote">"Every love story is beautiful, but ours is my favorite ❤️"</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CELEBRATION SECTION ===== -->
+    <section id="celebration" class="section celebration hidden">
+        <div class="celebration-content">
+            <div class="celebration-hearts" id="celebration-hearts"></div>
+            <h2 class="celebration-title">Yayyyy! ❤️</h2>
+            <p class="celebration-text">You just made me the happiest person alive 🥹💖</p>
+            <div class="promise-box">
+                <p class="promise-text">I promise to love you, annoy you,<br>and stay with you forever 😘</p>
+            </div>
+            <div class="love-letter">
+                <p>Dear <span id="gf-name-display">❤️</span>,</p>
+                <p>You are the reason I smile every day. Thank you for being mine. This Valentine's and every day after, my heart is yours. 💝</p>
+                <p class="letter-sign">— Forever Yours 💘</p>
+            </div>
+            <div class="final-hearts">
+                <span>💖</span><span>💗</span><span>💕</span><span>💝</span><span>❤️</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Background Music (royalty-free romantic tune) -->
+    <audio id="bg-music" loop>
+        <source src="https://cdn.pixabay.com/audio/2024/11/04/audio_4956b4ece1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Music Toggle -->
+    <button class="music-toggle" id="music-toggle" onclick="toggleMusic()">🎵</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
